@@ -1,0 +1,27 @@
+# Ignore compiled files
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Dependency lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Config and metadata
+coverage/
+*.lock
+.DS_Store
+
+# Ignore specific folders/files
+tests/**/*.snap
+public/
