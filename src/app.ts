@@ -17,5 +17,6 @@ app.use(
 
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/")
 
 export default app;
