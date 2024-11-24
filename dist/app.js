@@ -16,4 +16,5 @@ app.use((0, cors_1.default)({
 }));
 app.use("/api/products", product_routes_1.productRoutes);
 app.use("/api/orders", order_routes_1.orderRoutes);
+app.use("/");
 exports.default = app;
