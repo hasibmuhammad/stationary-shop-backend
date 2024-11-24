@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import { orderRoutes } from "./routes/order.routes";
 import { productRoutes } from "./routes/product.routes";
+import { welcomeRoutes } from "./routes/welcome.routes";
 
 dotenv.config();
 
@@ -17,6 +18,6 @@ app.use(
 
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
-app.use("/")
+app.use("/", welcomeRoutes);
 
 export default app;

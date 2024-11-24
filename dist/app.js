@@ -8,6 +8,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 const order_routes_1 = require("./routes/order.routes");
 const product_routes_1 = require("./routes/product.routes");
+const welcome_routes_1 = require("./routes/welcome.routes");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
@@ -16,5 +17,5 @@ app.use((0, cors_1.default)({
 }));
 app.use("/api/products", product_routes_1.productRoutes);
 app.use("/api/orders", order_routes_1.orderRoutes);
-app.use("/");
+app.use("/", welcome_routes_1.welcomeRoutes);
 exports.default = app;
