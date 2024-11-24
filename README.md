@@ -53,6 +53,12 @@ Before you begin, ensure that you have the following software installed:
    ```
    The server will start on http://localhost:5000.
 
+## Live URL
+
+### Visit the live url
+
+https://stationary-shop-backend-hasib.vercel.app
+
 ## API Endpoints
 
 ### Product Routes
