@@ -1,3 +1,5 @@
+import mongoose from "mongoose";
+
 export interface IProductType {
   name: string;
   brand: string;
@@ -11,4 +13,11 @@ export interface IProductType {
   description: string;
   quantity: number;
   inStock: boolean;
+}
+
+export interface IOrder {
+  email: string;
+  product: mongoose.Types.ObjectId;
+  quantity: number;
+  totalPrice: number;
 }
