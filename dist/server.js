@@ -13,7 +13,8 @@ const port = process.env.PORT || 5001;
     app_1.default.listen(port, () => {
         console.log(`Server is running on port: ${port}`);
     });
-}).catch((error) => {
+})
+    .catch((error) => {
     console.log("Failed to connect mongodb or start the server!", error);
     process.exit(1);
 });
